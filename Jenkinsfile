@@ -3,8 +3,9 @@ pipeline {
     
     environment {
         RENDER_APP_NAME = 'gallery' // Replace with your Render application name
+        RENDER_LINK = 'https://gallery-95mu.onrender.com/'
         SLACK_CHANNEL = 'ian_ip1' // Replace with your Slack channel
-        SLACK_CREDENTIALS_ID = 'slack-bot-token' // Ensure this matches your Jenkins credentials ID
+        SLACK_CREDENTIALS_ID = '7UT8vmhodgwdjeDPLPyd4RI3' // Ensure this matches your Jenkins credentials ID
         EMAIL_RECIPIENT = 'mbuguaian32@gmail.com' // Replace with your email recipient or ensure it's set in Jenkins
     }
     
@@ -29,14 +30,7 @@ pipeline {
             }
         }
         
-        stage('Install mocha and chai') {
-            steps {
-                echo 'Installing other dependencies...'
-                sh 'npm install --save-dev mocha chai chai-http'
-            }
-        }
-        
-     stage('Test project') {
+        stage('Test project') {
             steps {
                 echo 'Running tests...'
                 sh 'npm test'
