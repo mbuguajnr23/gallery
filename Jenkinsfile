@@ -23,6 +23,9 @@ pipeline {
         }
     }
     post {
+        success {
+            echo 'Deployment was successful!'
+        }
         failure {
             mail to: 'mbuguaian32@gmail.com',
                  subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
