@@ -76,7 +76,7 @@ pipeline {
                 slackSend (
                     channel: "${SLACK_CHANNEL}", 
                     color: 'good', 
-                    message: "Build succeeded: ${env.JOB_NAME} ${env.BUILD_NUMBER}. Access app on https://gallery-zuvc.onrender.com/"
+                    message: "Build succeeded: ${env.JOB_NAME} ${env.BUILD_NUMBER}. Access app on https://gallery-95mu.onrender.com"
                 )
             }
         }
