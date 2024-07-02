@@ -10,7 +10,7 @@ pipeline {
     }
     
     tools {
-        NodeJS "22.3.0"  // Use the NodeJS tool defined in Jenkins
+        nodejs "22.3.0"  // Use the NodeJS tool defined in Jenkins
     }
     
     triggers {
