@@ -9,9 +9,9 @@ pipeline {
         EMAIL_RECIPIENT = 'mbuguaian32@gmail.com' // Replace with your email recipient or ensure it's set in Jenkins
     }
     
-    tools {
-        nodejs "22.3.0"  // Use the NodeJS tool defined in Jenkins
-    }
+    // tools {
+    //     nodejs "22.3.0"  // Use the NodeJS tool defined in Jenkins
+    // }
     
     triggers {
         pollSCM('H/2 * * * *') // Polls the SCM every 2 minutes
