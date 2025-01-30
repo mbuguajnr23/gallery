@@ -9,7 +9,7 @@ pipeline {
         RENDER_LINK = 'https://gallery-95mu.onrender.com/' // Replace with your Render application link
         SLACK_CHANNEL = 'ianip1' // Replace with your Slack channel
         SLACK_CREDENTIALS_ID = '7UT8vmhodgwdjeDPLPyd4RI3' // Ensure this matches your Jenkins credentials ID
-        EMAIL_RECIPIENT = 'mbuguaian32@gmail.com' // Replace with your email recipient or ensure it's set in Jenkins
+        EMAIL_RECIPIENT = '' // Replace with your email recipient or ensure it's set in Jenkins
     }
 
     triggers {
